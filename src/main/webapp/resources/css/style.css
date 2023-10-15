@@ -267,10 +267,13 @@ hr {
   width: 1500px;
   height: 800px;
 }
-
+.lineButton{
+  display: flex;
+}
 #openModalBtn {
   margin-top: 0%;
-  margin-left: 37%;
+  margin-left: 17%;
+  margin-right: -35%;
   background-color: #181010;
   color: #D7BFA6;
   font-family: "PT Serif", serif;
@@ -283,6 +286,20 @@ hr {
 
 }
 
+#tgBotButton{
+
+    margin-top: 0%;
+    margin-left: 47%;
+    background-color: #181010;
+    color: #D7BFA6;
+    font-family: "PT Serif", serif;
+    padding: 30px 70px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
 .modal {
   display: none;
   position: fixed;
