@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="htttp://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=aad9ce1e-e56b-4332-bcc0-23b3e4d82078&lang=ru_RU" type="text/javascript"></script>
+  <title>Берендей</title>
+</head>
+<body>
+  <div class="header">
+  
+    <div class="header-line">
+      <div class="header-logo">
+        <a href="https://vk.com/berendey56" target="_blank">
+        <img src="resources/imgs/logo_vk.png" alt="">
+      </a>
+      <a href="#" target="_blank">
+        <img src="resources/imgs/logo_facebook.png" alt="">
+      </a>
+      <a href="https://instagram.com/berendei.56?igshid=MzRlODBiNWFlZA==" target="_blank">
+        <img src="resources/imgs/logo_inst.png" alt="">
+      </a>
+      </div>
+      <div class="logo-name">
+        <img src="resources/imgs/logo-name.png" alt="">
+      </div>
+      
+    </div>
+    <div class="weather">
+      <p>ПОГОДА СЕГОДНЯ:</p>
+        <p><span th:text="${temp}">VALUE</span>°C</p>
+    </div>
+  </div>
+
+
+  <div class="main_menu">
+    <div class="nav">
+      <button id="galleryButton">ГАЛЕРЕЯ</button>
+      <button id="baniButton">БАНИ</button>
+      <button id="entertainmentsButton">РАЗВЛЕЧЕНИЯ</button>
+      <button id="houseButton">ДОМИКИ</button>
+      <button id="pavilionsButton">БЕСЕДКИ</button>
+  </div>
+    
+  </div>
+
+  <div class="info">
+    <div class="solid">
+      <div class="line"></div>
+      <div class="info-text">
+      <p>База отдыха "Берендей" расположена в живописном месте на берегу реки Урал в Оренбурге. Это популярное место для отдыха и развлечений как для местных жителей, так и для туристов. На территории базы отдыха есть комфортабельные коттеджи и гостиничные номера, предлагающие различные уровни комфорта и удобства. К услугам гостей также имеются рестораны, кафе и бары, где можно насладиться разнообразными блюдами и напитками. </p>
+    </div>
+    <button id="openModalBtn">Забронировать</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h2>Заявка на бронирование</h2>
+        <form th:method="POST" th:action="@{/}" th:object="${book}">
+          <div>
+            <label for="name">Имя:</label>
+            <input name="name" type="text" id="name" required>
+          </div>
+          <div>
+            <label for="phone">Телефон:</label>
+            <input name="phoneNumber" type="tel" id="phone" required>
+          </div>
+          <div>
+            <label for="object">Объект:</label>
+            <select name="typePlace" id="object">
+              <option value="Баня">Баня</option>
+              <option value="Беседка">Беседка</option>
+              <option value="Домик">Домик</option>
+            </select>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <section id="block1">
+  <div class="gallery">
+    <p>НАША ГАЛЕРЕЯ</p>
+    <hr>
+    <div class="photos">
+      <img src="resources/imgs/Photo1.jpg" alt="Photo 1">
+      <img src="resources/imgs/Photo2.jpg" alt="Photo 2">
+      <img src="resources/imgs/Photo3.jpg" alt="Photo 3">
+      <img src="resources/imgs/Photo4.jpg" alt="Photo 4">
+      <img src="resources/imgs/Photo5.jpg" alt="Photo 5">
+      <img src="resources/imgs/Photo6.jpg" alt="Photo 6">
+    </div>
+  </div>
+  </section>
+  <section id="block2">
+  <div class="main-block">
+    <div class="container">
+      <div class="block">
+        <h2 class="title">В нашей бане</h2>
+        <p class="text">вы расслабитесь и отвлечётесь от городской суеты. Теплые бани на дровах всегда открыты для вас. После приятного отдыха вы сможете окунуться в бассейне или охладиться в оздоровительной купели. Так же в нашем магазине вы сможете приобрести натуральные веники и различные масла. В аренду выдаются шапочки для парной и одноразовые тапочки.</p>
+        <div class="image-container">
+          <img src="resources/imgs/banya.jpg" alt="Фото">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="block3">
+  <div class="main-wrapper">
+    <div class="content-block">
+      <img src="resources/imgs/razvl.jpg" alt="Фото" class="photo">
+      <div class="text-block">
+        <h2 class="title1">Развлечения</h2>
+        <p class="text1">
+          База предоставляет для Вашего веселого отдыха : площадка для пляжного волейбола, пляж, открытый бассейн, детский батут, аниматоры для вашего праздника, баня и сауна, скалодром, веревочный парк, а так же прекрасные локации для ваших фотографий</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="block4">
+  <div class="main-block">
+    <div class="container">
+      <div class="block">
+        <h2 class="title">В пределах турбазы "Берендей" предусмотрена аренда летних веранд на открытом воздухе</h2>
+        <p class="text">
+          В зависимости от количества гостей мы поможем вам с выбором беседки. В удобно расположенных беседках можно насладиться прекрасным видом на берег и насладиться чистым лесным воздухом. Так же в беседках установлены розетки и можно не бояться потерять связь с миром</p>
+        <div class="image-container">
+          <img src="resources/imgs/tent.jpg" alt="Фото">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="block5">
+  <div class="main-wrapper">
+    <div class="content-block">
+      <img src="resources/imgs/razvl.jpg" alt="Фото" class="photo">
+      <div class="text-block">
+        <h2 class="title1">На территории нашей базы вы можете арендовать уютный домик</h2>
+        <p class="text1">
+          
+и прекрасно провести время. В зависимости от количества человек, и ситуации мы можем предложить разные варианты домов. Внутри домика лесника вы сможете по-настоящему прочувствовать атмосферу лесников и охотников. 
+В каждом домике  установлены розетки, чайник, плита и микроволновка. Дополнительно можно арендовать мангал.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="gallery">
+    <p>КАК НАС НАЙТИ:</p>
+    <hr>
+    <div id="map"></div>
+  <script type="text/javascript">
+    ymaps.ready(init); // Код будет выполнен, когда загрузятся все компоненты API
+
+    function init() {
+      // Создание карты
+      var myMap = new ymaps.Map("map", {
+        center: [51.741748,55.136638], // Координаты центра карты (широта и долгота)
+        zoom: 13 // Масштаб карты
+      });
+
+      // Создание метки
+      var myPlacemark = new ymaps.Placemark([51.741748,55.136638], {
+        hintContent: "Берендей", // Всплывающая подсказка
+        balloonContent: "База отдыха" // Содержимое балуна
+      });
+
+      // Добавление метки на карту
+      myMap.geoObjects.add(myPlacemark);
+    }
+
+    document.getElementById("galleryButton").onclick = function () {
+    document.getElementById("block1").scrollIntoView({behavior: "smooth"});
+}
+document.getElementById("baniButton").onclick = function () {
+    document.getElementById("block2").scrollIntoView({behavior: "smooth"});
+}
+document.getElementById("entertainmentsButton").onclick = function () {
+    document.getElementById("block3").scrollIntoView({behavior: "smooth"});
+}
+document.getElementById("houseButton").onclick = function () {
+    document.getElementById("block4").scrollIntoView({behavior: "smooth"});
+}
+document.getElementById("pavilionsButton").onclick = function () {
+    document.getElementById("block5").scrollIntoView({behavior: "smooth"});
+}    
+  </script>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+var btn = document.getElementById("openModalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+</body>
+</html>
