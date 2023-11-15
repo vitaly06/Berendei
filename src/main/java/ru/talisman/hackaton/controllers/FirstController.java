@@ -29,7 +29,7 @@ public class FirstController {
             // температура в городе
             double temp = weather.getJSONObject("main").getDouble("temp");
             model.addAttribute("temp", temp);
-            return "index";
+            return "index_new";
         } catch (Exception e){
             System.out.println("Error!");
         }
