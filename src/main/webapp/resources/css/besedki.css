@@ -16,28 +16,28 @@ height: 100%;
 }
 
 #bg1{
-    background: url('img/besedka1.png') no-repeat;
+    background: url('../imgs/besedka1.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
 
 }
 #bg2{
-    background: url('img/besedka2.png') no-repeat;
+    background: url('../imgs/besedka2.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
 
 }
 #bg3{
-    background: url('img/besedka3.png') no-repeat;
+    background: url('../imgs/besedka3.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
 
 }
 #bg4{
-    background: url('img/besedka4.png') no-repeat;
+    background: url('../imgs/besedka4.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;

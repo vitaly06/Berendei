@@ -39,6 +39,14 @@ public class FirstController {
     public String houses(){
         return "houses";
     }
+    @GetMapping("/besedki")
+    public String besedki(){
+        return "besedki";
+    }
+    @GetMapping("/banya")
+    public String banya(){
+        return "banya";
+    }
     @PostMapping()
     public String add(@ModelAttribute("book") Book book) throws SQLException {
         bookDAO.save(book);

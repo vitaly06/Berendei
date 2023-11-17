@@ -16,28 +16,28 @@ height: 100%;
 }
 
 #bg1{
-    background: url('img/banya1.png') no-repeat;
+    background: url('../imgs/banya1.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
 
 }
 #bg2{
-    background: url('img/banya2.png') no-repeat;
+    background: url('../imgs/banya2.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
 
 }
 #bg3{
-    background: url('img/banya3.png') no-repeat;
+    background: url('../imgs/banya3.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
 
 }
 #bg4{
-    background: url('img/banya4.png') no-repeat;
+    background: url('../imgs/banya4.png') no-repeat;
     background-blend-mode: multiply;
     background-color: #6d6c6c;
     background-size: cover;
