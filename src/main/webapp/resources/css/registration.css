@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.reg {
+    margin-top: 10%;
+    font-family: PT Serif;
+    font-size: calc(44px + 16 * (100vw / 1280));
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    color: #422626;
+    text-align: center;
+    justify-content: center;
+}
+#textRight {
+    font-family: PT Serif;
+    font-size: calc(44px + 16 * (100vw / 1280));
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+#smTextRight {
+    margin-left: 15%;
+    font-family: PT Serif;
+    font-size: calc(14px + 16 * (100vw / 1280));
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.reg input{
+    margin-bottom: 10%;
+    font-size: calc(24px + 16 * (100vw / 1280)); 
+    border-radius: 30px;
+    background-color: #D9D9D98C;
+    text-align: center;
+    width: 130%;
+    height: 70%;
+}
+.reg p{
+    margin-bottom: 5%;
+}
+body{
+background-image: url("img/bgReg.png");
+background-position: 100% 0;
+background-size: 50vw 100vh;
+background-repeat: no-repeat;
+background-blend-mode: multiply;
+background-color: #6d6c6c;
+}
+
+
+.button{
+background-color: #422626;
+border-radius: 30px;
+border-color: #422626;
+border-width: 4px;
+box-shadow: none;
+color: white;
+padding: 5px 12px;
+text-align: center;
+cursor: pointer;
+font-family: PT Serif;
+font-size: calc(6px + 16 * (100vw / 1280)); 
+font-weight: 700;
+text-align: center;
+}
+.button:hover {
+    background-color:white;
+    color: #422626;
+    transition: 0.7s;
+}
+
+.button1{ 
+    margin-left: 40%;
+    background-color: transparent;
+    border-radius: 30px;
+    border-color: white;
+    border-width: 4px;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    cursor: pointer;
+    font-family: PT Serif;
+    font-size: calc(20px + 16 * (100vw / 1280)); 
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.button1:hover {
+    background-color:#fff;
+    color: black;
+    transition: 0.7s;
+}
+.inputWithIcon input[type="text"] {
+    padding-left: 10%;
+  }
+.inputWithIcon {
+    height: 12%;
+    position: absolute;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    padding: 0% 0%;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .inputWithIcon1.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon1 input[type="text"] {
+    padding-left: 150%;
+  }
+.inputWithIcon1 {
+    position: relative;
+  }
+  
+  .inputWithIcon1 i {
+    position: absolute;
+    left: 5%;
+    top: -8%;
+    padding: 2% 0%;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  

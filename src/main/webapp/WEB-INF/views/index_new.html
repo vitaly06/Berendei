@@ -32,7 +32,7 @@
                 <div class="col-md-2">
                     <div class="weather">
                         <p>ПОГОДА СЕГОДНЯ:</p>
-                        <p>подвязка бэк </p>
+                        <p><span th:text="${temp}">VALUE</span>°C</p>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -77,9 +77,9 @@
             <div class="col-md-4 d-flex justify-content-center"><img src="resources/imgs/beach.png" alt=""></div>
         </div>
         <div class="row">
-            <div class="col-md-4 d-flex justify-content-center"><p>Уютные домики <br> <button class="btn-1">Подробнее</button></p></div>
-            <div class="col-md-4 d-flex justify-content-center"><p>Развлевчения <br> <button class="btn-1">Подробнее</button></p></div>
-            <div class="col-md-4 d-flex justify-content-center"><p>Шикарный пляж <br> <button class="btn-1">Подробнее</button></p><div>
+            <div class="col-md-4 d-flex justify-content-center"><p>Уютные домики <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p></div>
+            <div class="col-md-4 d-flex justify-content-center"><p>Развлевчения <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p></div>
+            <div class="col-md-4 d-flex justify-content-center"><p>Шикарный пляж <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p><div>
             </div>
 
                 <div class="row">
@@ -95,9 +95,9 @@
                 <div class="text-inf">
                     <div class="row">
                         <div class="col-md-3 d-flex justify-content-center"><p>Как нас найти? <br> <button class="btn-1">Подробнее</button></p></div>
-                        <div class="col-md-3 d-flex justify-content-center"><p>Беседки <br> <button class="btn-1">Подробнее</button></p></div>
-                        <div class="col-md-3 d-flex justify-content-center"><p>Русские бани <br> <button class="btn-1">Подробнее</button></p></div>
-                        <div class="col-md-3 d-flex justify-content-center"><p>Галерея <br> <button class="btn-1">Подробнее</button></p></div>
+                        <div class="col-md-3 d-flex justify-content-center"><p>Беседки <br> <a href="/besedki"><button class="btn-1">Подробнее</button></a></p></div>
+                        <div class="col-md-3 d-flex justify-content-center"><p>Русские бани <br> <a href="/banya"><button class="btn-1">Подробнее</button></a></p></div>
+                        <div class="col-md-3 d-flex justify-content-center"><p>Галерея <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p></div>
                     </div>
                 </div>
             </div>
