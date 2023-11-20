@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en" xmlns:th="htttp://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,9 +41,7 @@
                  </div>
                 </div>
                 <div class="col-md-7 d-flex justify-content-center">
-                    <form action="page/new.html" target="_blank">
-                        <button class="button1">Перейти</button>
-                       </form>
+                        <a href="/login"><button class="button1">Перейти</button></a>
                  </div>
             </div>
             <div class="row">
@@ -55,8 +54,8 @@
             </div>
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <form action="page/new.html" target="_blank">
-                        <button class="button">Зарегистрироваться</button>
+                    <form th:method="POST" action="/reg" target="_blank">
+                        <button class="button" type="submit">Зарегистрироваться</button>
                        </form>
                  </div>
             </div>
