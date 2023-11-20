@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bron.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Бронь</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <img src="img/logo-name.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="text">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center" style="margin-top: 3%;">
+                    <div class="stripe"></div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <p>Бронирование</p>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="second-header">
+                        <h4>Выбор параметров номера и тарифа</h4>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="second-main">
+                            <h3>Параметры проживания:</h3>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-2" style="margin-left: 3%; margin-top: 3%;">
+                                        <label for="">Дата заезда</label>
+                                        <input type="date" value="2017-06-01" />
+                                    </div>
+                                    <div class="col-md-2" style="margin-left: 3%; margin-top: 3%;">
+                                        <label for="">Дата выезда</label>
+                                        <input type="date" value="2017-06-01" />
+                                    </div>
+                                    <div class="col-md-2" style="margin-left: 3%; margin-top: 3%;">
+                                        <label for="">взрослые</label>
+                                            <select name="choice">
+                                            <option value="first">1 </option>
+                                            <option value="second">2</option>
+                                            <option value="third">3 </option>
+                                            <option value="third">4 </option>
+                                            <option value="third">5 </option>
+                                            <option value="third" selected>6 </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2" style="margin-left: 3%; margin-top: 3%;">
+                                        <label for="">дети</label>
+                                        <select name="choice">
+                                            <option value="first">1 </option>
+                                            <option value="second" selected>2</option>
+                                            <option value="third">3 </option>
+                                            <option value="third">4 </option>
+                                            <option value="third">5 </option>
+                                            <option value="third">6 </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2" style="margin-left: 3%; margin-top: 3%;">
+                                        <button class="button" >Выбрать</button>
+                                    </div>
+                                    <div class="md-col-12" style="margin-top: 10%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="40" viewBox="0 0 1104 40" fill="none">
+                                            <path d="M0 2H118.444L145.181 37L171.918 2H1104" stroke="#442727" stroke-width="3"/>
+                                          </svg>
+                                    </div>
+
+                                    <div class="col-md-4 d-flex justify-content-center">
+                                        <div class="label1">
+                                        <label><input type="checkbox" style="visibility: hidden;" value="1" name="k"><span>КОТТЕДЖ CROFT</span></label>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center">
+                                        <div class="label2">
+                                            <label><input type="checkbox" style="visibility: hidden;" value="1" name="k"><span>FAMALY-КОТТЕДЖ</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center">
+                                        <div class="label3">
+                                            <label><input type="checkbox" style="visibility: hidden;" value="1" name="k"><span>КОТТЕДЖ MAJESTY</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="md-col-12" style="margin-top: 10%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="40" viewBox="0 0 1104 40" fill="none">
+                                            <path d="M0 2H118.444L145.181 37L171.918 2H1104" stroke="#442727" stroke-width="3"/>
+                                          </svg>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h3>Контанктные данные</h3>
+                                    </div>
+                                  
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder="имя"> 
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder="фамилия"> 
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder="отчество"> 
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder="телефон"> 
+                                        </div>
+                                        <div class="col-md-12 d-flex justify-content-center">
+                                            <button class="button2">Забронировать</button>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <h1>Берендей</h1>
+                </div>
+                <div class="col-md-3">
+                    <h1>Связаться с нами</h1>
+                </div>
+                <div class="col-md-3">
+                    <h1>Мы находимся</h1>
+                </div>
+                <div class="header-line">
+                    <div class="col-md-1""></div>
+                <div class="col-md-3"><a href="#">
+                    <img src="/img/logo_vk.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="/img/logo_facebook.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="/img/logo_inst.png" alt="">
+                  </a></div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <h6>2023 База отдыха "Берендей"</h6>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <h6>+7 (3532) 67-71-15 &nbsp; &nbsp; &nbsp; berendey56@mail.ru</h6>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <h6>Оренбург, Дубки, 20</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
