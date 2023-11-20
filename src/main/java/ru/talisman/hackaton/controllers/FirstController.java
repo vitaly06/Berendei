@@ -54,8 +54,9 @@ public class FirstController {
     public String book() {
         return "bron";
     }
+
     @GetMapping("/lk")
-    public String profile(){
+    public String profile() {
         return "lk";
     }
 
@@ -74,20 +75,22 @@ public class FirstController {
         return "banya";
     }
 
-    @PostMapping()
-    public String add(@ModelAttribute("book") Book book) throws SQLException {
-        bookDAO.save(book);
-        return "redirect:/";
-    }
     @PostMapping("/reg")
-    public String reg(@ModelAttribute("person") Person person) throws SQLException{
+    public String reg(@ModelAttribute("person") Person person) throws SQLException {
         personDAO.save(person);
         return "redirect:/";
     }
+
     @PostMapping("/login")
-    public String log(@ModelAttribute("person") Person person) throws SQLException{
+    public String log(@ModelAttribute("person") Person person) throws SQLException {
         isauth = personDAO.login(person);
         return "redirect:/";
+    }
+
+    @PostMapping("/bron")
+    public String bron_post(@ModelAttribute("book") Book book) throws SQLException {
+        bookDAO.book(book);
+        return "redirect:/lk";
     }
 
 
