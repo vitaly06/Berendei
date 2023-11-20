@@ -1,12 +1,10 @@
-﻿package ru.talisman.hackaton.dao;
+package ru.talisman.hackaton.dao;
 
 import org.springframework.stereotype.Component;
 import ru.talisman.hackaton.models.Person;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.Objects;
 
 @Component
 public class PersonDAO {
@@ -36,6 +34,22 @@ public class PersonDAO {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+    }
+    public String login(Person person){
+        connect();
+        try{
+            Statement statement = connection.createStatement();
+            String SQL = "SELECT password FROM USERS WHERE email = '" + person.getEmail() + "'";
+            ResultSet resultSet = statement.executeQuery(SQL);
+            String password = resultSet.getString("password");
+            if (Objects.equals(person.getPassword(), password)) {
+                return "1";
+            }
+            return "0";
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null;
     }
 
 

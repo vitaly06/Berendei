@@ -1,4 +1,4 @@
-﻿package ru.talisman.hackaton.models;
+package ru.talisman.hackaton.models;
 
 public class Person {
     private String name;
@@ -6,6 +6,11 @@ public class Person {
     private String password;
     private String secondpassword;
 
+    public Person(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
     public String getEmail() {
         return email;
     }

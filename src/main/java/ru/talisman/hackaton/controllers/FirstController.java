@@ -23,9 +23,11 @@ public class FirstController {
     public BookDAO bookDAO;
     @Autowired
     public PersonDAO personDAO;
+    String isauth = "0";
 
     @GetMapping("/")
     public String start(Model model) {
+        System.out.println(isauth);
         try {
             JSONObject weather = gw.getWeather("Orenburg", "00e95f8471360abf5346f0a5645a1a41");
             // температура в городе
@@ -78,8 +80,13 @@ public class FirstController {
         return "redirect:/";
     }
     @PostMapping("/reg")
-    public String reg(@ModelAttribute("person") Person person){
+    public String reg(@ModelAttribute("person") Person person) throws SQLException{
         personDAO.save(person);
+        return "redirect:/";
+    }
+    @PostMapping("/login")
+    public String log(@ModelAttribute("person") Person person) throws SQLException{
+        isauth = personDAO.login(person);
         return "redirect:/";
     }
 
