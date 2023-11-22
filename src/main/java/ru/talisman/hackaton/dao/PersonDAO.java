@@ -43,8 +43,10 @@ public class PersonDAO {
             ResultSet resultSet = statement.executeQuery(SQL);
             String password = resultSet.getString("password");
             if (Objects.equals(person.getPassword(), password)) {
+                System.out.println("hi");
                 return "1";
             }
+            System.out.println("bye");
             return "0";
         } catch (SQLException throwables) {
             throwables.printStackTrace();

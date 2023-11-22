@@ -103,7 +103,7 @@ public class FirstController {
     public String reg(@ModelAttribute("person") Person person, HttpServletRequest request) throws SQLException {
         String field = request.getParameter("regbtn");
         if("redirect".equals(field)){
-            return "vhod";
+            return "redirect:/login";
         }
         personDAO.save(person);
         personData = personDAO.getData(person);
@@ -114,7 +114,7 @@ public class FirstController {
     public String log(@ModelAttribute("person") Person person, HttpServletRequest request) throws SQLException {
         String field = request.getParameter("loginbtn");
         if("redirect".equals(field)){
-            return "registration";
+            return "redirect:/reg";
         }
         isauth = personDAO.login(person);
         personData = personDAO.getData(person);
