@@ -52,5 +52,23 @@ public class PersonDAO {
         return null;
     }
 
+    public String[] getData(Person person){
+        connect();
+        try {
+            Statement statement = connection.createStatement();
+            String SQL = "SELECT * FROM USERS WHERE email = '" + person.getEmail() + "'";
+            ResultSet resultSet = statement.executeQuery(SQL);
+            String name = resultSet.getString("name");
+            String email = resultSet.getString("email");
+            String password = resultSet.getString("password");
+            String[] data =  new String[] {name, email, password};
+            connection.close();
+            return data;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return new String[3];
+    }
+
 
 }

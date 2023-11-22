@@ -16,7 +16,7 @@ height: 100%;
 }
 
 main{
-    background-image: url(img/bgContact.png);
+    background-image: url(../imgs/bgContact.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

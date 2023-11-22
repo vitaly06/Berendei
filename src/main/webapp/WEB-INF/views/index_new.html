@@ -16,15 +16,18 @@
 
             <div class="header-line">
                 <div class="col-md-1"></div>
-                <div class="col-md-3"><a href="#">
-                    <img src="resources/imgs/logo_vk.png" alt="">
+                <span th:if="${isauth} == '1'">
+                <div class="col-md-3"><a href="/lk">
+                    <img src="resources/imgs/imgUser.png" alt="" width="100vh">
                 </a>
-                    <a href="#">
-                        <img src="resources/imgs/logo_facebook.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="resources/imgs/logo_inst.png" alt="">
-                    </a></div>
+                    </div>
+                </span>
+                <span th:unless="${isauth} == '1'">
+                <div class="col-md-3"><a href="/reg">
+                    <img src="resources/imgs/imgUser.png" alt="" width="100vh">
+                </a>
+                    </div>
+                </span>
                 <div class="col-md-4">
                     <img src="resources/imgs/logo-name.png" alt="" width="79%" height="79%">
                 </div>
@@ -78,8 +81,8 @@
         </div>
         <div class="row">
             <div class="col-md-4 d-flex justify-content-center"><p>Уютные домики <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p></div>
-            <div class="col-md-4 d-flex justify-content-center"><p>Развлевчения <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p></div>
-            <div class="col-md-4 d-flex justify-content-center"><p>Шикарный пляж <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p><div>
+            <div class="col-md-4 d-flex justify-content-center"><p>Развлевчения <br> <a href="/razvl"><button class="btn-1">Подробнее</button></a></p></div>
+            <div class="col-md-4 d-flex justify-content-center"><p>Шикарный пляж <br> <a href="/beach"><button class="btn-1">Подробнее</button></a></p><div>
             </div>
 
                 <div class="row">
@@ -94,7 +97,7 @@
                 </div>
                 <div class="text-inf">
                     <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center"><p>Как нас найти? <br> <button class="btn-1">Подробнее</button></p></div>
+                        <div class="col-md-3 d-flex justify-content-center"><p>Как нас найти? <br> <a href="/contact"><button class="btn-1">Подробнее</button></a></p></div>
                         <div class="col-md-3 d-flex justify-content-center"><p>Беседки <br> <a href="/besedki"><button class="btn-1">Подробнее</button></a></p></div>
                         <div class="col-md-3 d-flex justify-content-center"><p>Русские бани <br> <a href="/banya"><button class="btn-1">Подробнее</button></a></p></div>
                         <div class="col-md-3 d-flex justify-content-center"><p>Галерея <br> <a href="/houses"><button class="btn-1">Подробнее</button></a></p></div>
