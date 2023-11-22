@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en" xmlns:th="htttp://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
         </div>
         
         <div class="container-fluid">
-            <form th:method="POST" th:action="@{/login}" target="_blank" th:object="${person}">
+            <form th:method="POST" th:action="@{/login}" th:object="${person}">
             <div class="row">
                 <div class="col-md-5 d-flex justify-content-center">
                     <div class="inputWithIcon1">

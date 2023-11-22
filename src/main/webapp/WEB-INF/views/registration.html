@@ -20,9 +20,9 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container-fluid">
-            <form th:method="POST" th:action="@{/reg}" target="_blank" th:object="${person}">
+            <form th:method="POST" th:action="@{/reg}" th:object="${person}">
             <div class="row">
                 <div class="col-md-5 d-flex justify-content-center">
                     <div class="inputWithIcon">
@@ -42,7 +42,7 @@
                  </div>
                 </div>
                 <div class="col-md-7 d-flex justify-content-center">
-                        <button class="button1">Перейти</button>
+                        <button name="regbtn" value="redirect" class="button1">Перейти</button>
                  </div>
             </div>
             <div class="row">
@@ -55,7 +55,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center">
-                        <button class="button">Зарегистрироваться</button>
+                        <button name="regbtn" value="redirect" class="button">Зарегистрироваться</button>
                  </div>
             </div>
             </form>
