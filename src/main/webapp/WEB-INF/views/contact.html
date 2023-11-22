@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Как нас найти</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <img src="img/logo-name.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="text">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <p>КОНТАКТЫ</p>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="stripe"></div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center" style="    margin-top: 5%;">
+                    <ul>
+                        <li>Режим работы базы отдыха круглогодично.</li>
+                        <li>WhatsApp, Viber, Telegram: +7 (3532) 67-71-15.</li>
+                        <li>Вконтакте: vk.com/berendey56</li>
+                        <li>E-mail: berendey56@mail.ru</li>
+                        <li>Режим работы отдела продаж с 08:00 до 21:00.</li>
+                        <li>Оренбург, Дубки, 20</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <h4>Остались вопросы?</h4>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center" style="margin-bottom: 5%;">
+                    <form action="page/new.html" target="_blank">
+                        <button class="button">Телеграм бот</button>
+                       </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_КЛЮЧ&lang=ru_RU" type="text/javascript"></script>
+        <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-12">
+                    <div id="map" style="width: 100%; height: 60vh;">
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+  ymaps.ready(init);
+  function init(){
+    var myMap = new ymaps.Map("map", {
+      center: [51.74150795220441,55.1366368722249],
+      zoom: 13
+    });
+    var myPlacemark = new ymaps.Placemark([51.741631172639885,55.136596639089674], null, {
+    preset: 'islands#blueDotIcon'
+    });
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script>
+    </main>
+</body>
+</html>
