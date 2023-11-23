@@ -5,6 +5,18 @@ public class Book {
     private String peopleCount, kidsCount;
     private String place, name, surname, email, number;
 
+    public Book(String dateStart, String dateEnd, String peopleCount, String kidsCount, String place, String name, String surname, String email, String number) {
+        this.dateStart = dateStart;
+        this.dateEnd = dateEnd;
+        this.peopleCount = peopleCount;
+        this.kidsCount = kidsCount;
+        this.place = place;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.number = number;
+    }
+
     public String getDateStart() {
         return dateStart;
     }
@@ -75,5 +87,9 @@ public class Book {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public String getInfo(){
+        return place + "; " + dateStart + "; " + dateEnd;
     }
 }

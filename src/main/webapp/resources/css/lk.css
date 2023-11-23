@@ -60,6 +60,7 @@ aside{
 .con{
     height: 100%;
 }
+
 .square{
     margin-top: 5%;
     background-color: #422626;
@@ -73,4 +74,10 @@ aside{
     padding-left: 15px;
     padding-right: 15px;
     height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.txt{
+    vertical-align: middle;
 }

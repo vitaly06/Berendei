@@ -44,9 +44,11 @@ public class PersonDAO {
             String password = resultSet.getString("password");
             if (Objects.equals(person.getPassword(), password)) {
                 System.out.println("hi");
+                connection.close();
                 return "1";
             }
             System.out.println("bye");
+            connection.close();
             return "0";
         } catch (SQLException throwables) {
             throwables.printStackTrace();
