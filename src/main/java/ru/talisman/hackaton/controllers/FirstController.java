@@ -17,6 +17,7 @@ import ru.talisman.hackaton.models.Event;
 import ru.talisman.hackaton.models.Person;
 
 import java.sql.SQLException;
+import java.util.List;
 
 
 @Controller
@@ -30,6 +31,7 @@ public class FirstController {
     public EventDAO eventDAO;
     String isauth = "0";
     String[] personData;
+    public List<Book> books;
 
     @GetMapping("/")
     public String start(Model model) {
@@ -94,7 +96,15 @@ public class FirstController {
 
     @GetMapping("/lk")
     public String profile(Model model) {
+        System.out.println("name");
+        System.out.println(personData[1]);
+        books = bookDAO.getData(personData[1]);
+        model.addAttribute("books",  books);
+        model.addAttribute("dao", bookDAO);
         model.addAttribute("name", personData[0]);
+        for(Book book : books){
+            System.out.println(book.getInfo());
+        }
         return "lk";
     }
 
@@ -107,14 +117,14 @@ public class FirstController {
         }
         personDAO.save(person);
         personData = personDAO.getData(person);
-        return "redirect:/";
+        return "index_new";
     }
 
     @PostMapping("/login")
     public String log(@ModelAttribute("person") Person person, HttpServletRequest request) throws SQLException {
         String field = request.getParameter("loginbtn");
         if("redirect".equals(field)){
-            return "redirect:/reg";
+            return "index_new";
         }
         isauth = personDAO.login(person);
         personData = personDAO.getData(person);

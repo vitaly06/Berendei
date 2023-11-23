@@ -46,15 +46,17 @@
                     <div class="square">
                                 <div class="container">
                                     <div class="row">
+                                        <div th:block th:each="book : ${books}" class="container">
                                         <div class="col-md-12 d-flex justify-content-center">
+                                            <div class="square2"><span th:text="${book.getInfo}">инфо</span></div>
+                                        </div>
+                                        </div>
+                                        <!--<div class="col-md-12 d-flex justify-content-center">
                                             <div class="square2"></div>
                                         </div>
                                         <div class="col-md-12 d-flex justify-content-center">
                                             <div class="square2"></div>
-                                        </div>
-                                        <div class="col-md-12 d-flex justify-content-center">
-                                            <div class="square2"></div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                                </div>
