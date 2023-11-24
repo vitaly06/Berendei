@@ -16,18 +16,14 @@
 
             <div class="header-line">
                 <div class="col-md-1"></div>
-                <span th:if="${isauth} == '1'">
-                <div class="col-md-3"><a href="/lk">
+                <div th:if="${isauth} == '1'" class="col-md-3"><a href="/lk">
                     <img src="resources/imgs/imgUser.png" alt="" width="100vh">
                 </a>
                     </div>
-                </span>
-                <span th:unless="${isauth} == '1'">
-                <div class="col-md-3 d-flex justify-content-center"><a href="/reg">
+                <div th:unless="${isauth} == '1'" class="col-md-3 d-flex justify-content-center"><a href="/reg">
                     <img src="resources/imgs/imgUser.png" alt="" width="100vh">
                 </a>
                     </div>
-                </span>
                 <div class="col-md-4">
                     <img src="resources/imgs/logo-name.png" alt="" width="79%" height="79%">
                 </div>

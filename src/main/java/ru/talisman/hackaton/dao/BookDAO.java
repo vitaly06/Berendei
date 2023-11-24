@@ -36,7 +36,7 @@ public class BookDAO {
         try {
             Statement statement = connection.createStatement();
             String SQL = "INSERT INTO BOOKS VALUES('" + book.getDateStart() + "', '" + book.getDateEnd() +
-                    "', '" + book.getPeopleCount() + "', '" + book.getKidsCount() + "', '" + book.getPlace() +
+                    "', '" + book.getPeopleCount() + "', '" + book.getKidsCount() + "', '" + book.getPlace() + " КОТТЕДЖ" +
                     "', '" + book.getName() + "', '" + book.getSurname() + "', '" + book.getEmail() + "', '" + book.getNumber() + "')";
             statement.executeUpdate(SQL);
             connection.close();
