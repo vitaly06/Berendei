@@ -121,6 +121,7 @@ aside{
 }
 
 .square2{
+    border-radius: 30px;
     margin-top: 5%;
     background-color: white;
     width: 100%;

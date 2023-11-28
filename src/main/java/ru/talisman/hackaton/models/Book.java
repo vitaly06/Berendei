@@ -90,6 +90,6 @@ public class Book {
     }
 
     public String getInfo(){
-        return place + "; " + dateStart + "; " + dateEnd;
+        return place + "; Дата заезда: " + dateStart + "; Дата выезда: " + dateEnd;
     }
 }
