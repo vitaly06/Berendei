@@ -93,6 +93,14 @@ public class FirstController {
     public String book() {
         return "bron";
     }
+    @GetMapping("/besedki_book")
+    public String book_besedki(){
+        return "besedki_book";
+    }
+    @GetMapping("/banya_book")
+    public String book_banya(){
+        return "banya_book";
+    }
 
     @GetMapping("/lk")
     public String profile(Model model) {

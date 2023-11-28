@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #422626;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather{
+    font-family: PT Serif;
+    font-size: calc(50% + 16 * (100vw / 1280));
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+main{
+    background: url('img/bg_main.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #6d6c6c;
+}
+
+.text h1{
+margin-top: 20%;
+font-family: PT Serif;
+font-size: calc(24px + 16 * (100vw / 1280));
+font-weight: 700;
+line-height: 62px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+
+.text h2{
+margin-top: 10%;
+font-family: PT Serif;
+font-size: calc(24px + 16 * (100vw / 1280));
+font-weight: 400;
+line-height: 62px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+
+.button{
+    
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    padding: 25px 52px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: PT Serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+article{
+    background-color: #422626;
+}
+
+article h1{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: PT Serif;
+    font-size: calc(10px + 16 * (100vw / 1280));
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+.stripe {
+    margin-top: 2%;
+    width: 15%;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+article p{
+    margin-top: 2%;
+    font-family: PT Serif;
+    font-size: calc(1px + 16 * (100vw / 1280));
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.text-inf{
+    font-family: PT Serif;
+    font-size: calc(1px + 16 * (100vw / 1280));
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+section h1{
+    width: 100%;
+    margin-top: 2%;
+    font-family: PT Serif;
+    font-size: calc(10px + 16 * (100vw / 1280));
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #422626;
+}
+
+section .stripe {
+    margin-top: 5%;
+    width: 20%;
+    height: 5px;
+    background-color: #422626;
+    border-radius: 10px;
+
+}
+
+.btn-1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #738241;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-1:hover {
+    background-color: #738241;
+}
+
+.btn-1:active {
+    background-color: #738241;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+.text-info-second{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 100%;
+    font-family: PT serif;
+    font-size: calc(10px + 16 * (100vw / 1280));
+    letter-spacing: 0em;
+    text-align: center;
+    color: #422626;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #422626;
+}
+
+footer h1{
+    margin-top: 2%;
+    font-family: PT Serif;
+    font-size: calc(10px + 16 * (100vw / 1280));
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+footer h6{
+    margin-top: -5%;
+    font-style: italic;
+    font-family: PT Serif;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+footer img{
+    margin-top: -10%;
+}
