@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/ru/talisman/hackaton/dao/EventDAO.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ru/talisman/hackaton/dao/PersonDAO.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/css/registration.css" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
