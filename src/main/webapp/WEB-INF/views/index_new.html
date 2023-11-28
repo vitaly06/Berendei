@@ -16,7 +16,7 @@
 
             <div class="header-line">
                 <div class="col-md-1"></div>
-                <div th:if="${isauth} == '1'" class="col-md-3">
+                <div th:if="${isauth} == '1'" class="col-md-3 d-flex justify-content-center">
                     <h3><a href="/lk" style="text-decoration: none; color: white; font-family:  PT Serif; font-weight: 500;">Личный кабинет</a></h3>
                     </div>
                 <div th:unless="${isauth} == '1'" class="col-md-3 d-flex justify-content-center">
